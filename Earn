@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Earn Online Hub</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+💰 Earn Online Hub
+</div>
+
+<div class="search-box">
+
+<input
+type="text"
+id="search"
+placeholder="Search apps...">
+
+<i class="fas fa-search"></i>
+
+</div>
+
+</header>
+
+<section class="hero">
+
+<h1>100+ Genuine Ways To Earn Money Online</h1>
+
+<p>Learn Skills • Build Income • Stay Safe</p>
+
+</section>
+
+<section class="container">
+
+<div class="card">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg">
+
+<h2>
+<i class="fab fa-youtube"></i>
+YouTube
+</h2>
+
+<div class="rating">
+⭐⭐⭐⭐⭐
+</div>
+
+<div class="difficulty easy">
+Easy
+</div>
+
+<p>Create videos and earn through ads after meeting YouTube's monetization requirements.</p>
+
+<button>Learn More</button>
+
+</div>
+
+<div class="card">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Fiverr_Logo.svg">
+
+<h2>
+
+<i class="fas fa-briefcase"></i>
+
+Fiverr
+
+</h2>
+
+<div class="rating">
+⭐⭐⭐⭐☆
+</div>
+
+<div class="difficulty medium">
+Medium
+</div>
+
+<p>Sell your skills like video editing, writing and design.</p>
+
+<button>Learn More</button>
+
+</div>
+
+<div class="card">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Upwork_Logo.svg">
+
+<h2>
+
+<i class="fas fa-laptop-code"></i>
+
+Upwork
+
+</h2>
+
+<div class="rating">
+⭐⭐⭐⭐☆
+</div>
+
+<div class="difficulty hard">
+Hard
+</div>
+
+<p>Work with international clients and get paid.</p>
+
+<button>Learn More</button>
+
+</div>
+
+<div class="card">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg">
+
+<h2>
+
+<i class="fas fa-link"></i>
+
+Amazon Affiliate
+
+</h2>
+
+<div class="rating">
+⭐⭐⭐⭐☆
+</div>
+
+<div class="difficulty medium">
+Medium
+</div>
+
+<p>Share affiliate links and earn commissions on eligible purchases.</p>
+
+<button>Learn More</button>
+
+</div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+/* ---------- Reset ---------- */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+background:#111827;
+color:white;
+}
+
+/* ---------- Header ---------- */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 30px;
+background:#0f172a;
+position:sticky;
+top:0;
+z-index:1000;
+box-shadow:0 3px 10px rgba(0,0,0,.4);
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#38bdf8;
+}
+
+.search-box{
+position:relative;
+}
+
+.search-box input{
+width:280px;
+padding:12px 45px 12px 15px;
+border:none;
+border-radius:30px;
+font-size:16px;
+outline:none;
+}
+
+.search-box i{
+position:absolute;
+right:15px;
+top:13px;
+color:#555;
+}
+
+/* ---------- Hero ---------- */
+
+.hero{
+text-align:center;
+padding:60px 20px;
+background:linear-gradient(135deg,#2563eb,#7c3aed);
+}
+
+.hero h1{
+font-size:42px;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:20px;
+}
+
+/* ---------- Cards ---------- */
+
+.container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+padding:40px;
+}
+
+.card{
+background:#1e293b;
+border-radius:18px;
+overflow:hidden;
+transition:.3s;
+box-shadow:0 5px 15px rgba(0,0,0,.4);
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 10px 20px rgba(0,0,0,.6);
+}
+
+.card img{
+width:100%;
+height:180px;
+object-fit:contain;
+background:white;
+padding:20px;
+}
+
+.card h2{
+padding:15px;
+font-size:24px;
+color:#38bdf8;
+}
+
+.card p{
+padding:0 15px;
+line-height:1.6;
+color:#d1d5db;
+}
+
+.rating{
+padding:10px 15px;
+font-size:20px;
+color:gold;
+}
+
+/* ---------- Difficulty ---------- */
+
+.difficulty{
+display:inline-block;
+margin:0 15px 15px;
+padding:6px 14px;
+border-radius:20px;
+font-size:14px;
+font-weight:bold;
+}
+
+.easy{
+background:#22c55e;
+}
+
+.medium{
+background:#f59e0b;
+}
+
+.hard{
+background:#ef4444;
+}
+
+/* ---------- Button ---------- */
+
+button{
+margin:15px;
+padding:12px 20px;
+border:none;
+border-radius:30px;
+background:#3b82f6;
+color:white;
+font-size:16px;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+background:#2563eb;
+transform:scale(1.05);
+}
+
+/* ---------- Footer ---------- */
+
+footer{
+text-align:center;
+padding:30px;
+background:#0f172a;
+margin-top:30px;
+color:#9ca3af;
+}
+
+/* ---------- Responsive ---------- */
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+gap:15px;
+}
+
+.search-box input{
+width:100%;
+}
+
+.hero h1{
+font-size:30px;
+}
+
+.hero p{
+font-size:17px;
+}
+
+.container{
+padding:20px;
+}
+
+}
+// ===============================
+// Earn Online Hub JavaScript
+// ===============================
+
+// Search Function
+const searchInput = document.getElementById("search");
+const cards = document.querySelectorAll(".card");
+
+searchInput.addEventListener("keyup", function () {
+
+let value = searchInput.value.toLowerCase();
+
+cards.forEach(card => {
+
+let text = card.innerText.toLowerCase();
+
+if(text.includes(value)){
+card.style.display="block";
+}
+else{
+card.style.display="none";
+}
+
+});
+
+});
+
+// ===============================
+// Dark Mode
+// ===============================
+
+let darkBtn=document.createElement("button");
+
+darkBtn.innerHTML="🌙 Dark Mode";
+
+darkBtn.style.position="fixed";
+darkBtn.style.bottom="20px";
+darkBtn.style.right="20px";
+darkBtn.style.padding="12px";
+darkBtn.style.borderRadius="50px";
+darkBtn.style.border="none";
+darkBtn.style.background="#2563eb";
+darkBtn.style.color="white";
+darkBtn.style.cursor="pointer";
+
+document.body.appendChild(darkBtn);
+
+let dark=true;
+
+darkBtn.onclick=function(){
+
+if(dark){
+
+document.body.style.background="#ffffff";
+document.body.style.color="#111";
+
+document.querySelectorAll(".card").forEach(card=>{
+card.style.background="#f2f2f2";
+card.style.color="#111";
+});
+
+darkBtn.innerHTML="☀ Light Mode";
+
+dark=false;
+
+}
+
+else{
+
+document.body.style.background="#111827";
+document.body.style.color="white";
+
+document.querySelectorAll(".card").forEach(card=>{
+card.style.background="#1e293b";
+card.style.color="white";
+});
+
+darkBtn.innerHTML="🌙 Dark Mode";
+
+dark=true;
+
+}
+
+}
+
+// ===============================
+// Favourite Button
+// ===============================
+
+document.querySelectorAll(".card").forEach(card=>{
+
+let fav=document.createElement("button");
+
+fav.innerHTML="🤍 Favourite";
+
+fav.style.margin="10px";
+
+card.appendChild(fav);
+
+fav.onclick=function(){
+
+if(fav.innerHTML=="🤍 Favourite"){
+
+fav.innerHTML="❤️ Saved";
+
+}
+
+else{
+
+fav.innerHTML="🤍 Favourite";
+
+}
+
+}
+
+});
+
+// ===============================
+// Rating Alert
+// ===============================
+
+document.querySelectorAll(".rating").forEach(rate=>{
+
+rate.onclick=function(){
+
+alert("Average User Rating : "+rate.innerText);
+
+}
+
+});
+
+// ===============================
+// Learn More
+// ===============================
+
+document.querySelectorAll(".card button").forEach(btn=>{
+
+btn.addEventListener("click",function(){
+
+alert("Detailed guide coming soon!");
+
+});
+
+});
+
+// ===============================
+// Welcome Message
+// ===============================
+
+setTimeout(function(){
+
+alert("Welcome to Earn Online Hub 🚀");
+
+},1000);
